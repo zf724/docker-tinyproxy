@@ -12,7 +12,7 @@ RUN set -xe \
               -e '/^#DisableViaHeader /s/^#//' \
               /etc/tinyproxy/tinyproxy.conf
 
-VOLUME /etc/tinyproxy
+#VOLUME /etc/tinyproxy
 EXPOSE 8888
 
 CMD ["tinyproxy", "-d"]
